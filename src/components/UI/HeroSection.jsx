@@ -1,29 +1,25 @@
-import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-
-const HeroSection = () => {
+import img from "./world.png";
+export const HeroSection = () => {
   return (
     <main className="hero-section main">
-      <div className="container grid-two-cols">
+      <div className="container grid grid-two-cols">
         <div className="hero-content">
           <h1 className="heading-xl">
-            Explore the World,one country at a time
+            Explore the World, One Country at a Time.
           </h1>
           <p className="paragraph">
-            Discover the history,culture and beauty of every nation.Sort,search
-            and filter your countries to find the details you need
+            Discover the history, culture, and beauty of every nation. Sort,
+            search, and filter through countries to find the details you need.
           </p>
           <button className="btn btn-darken btn-inline bg-white-box">
-            Start Exploring
-            <FaLongArrowAltRight />
+            Start Exploring <FaLongArrowAltRight />
           </button>
         </div>
         <div className="hero-image">
-          <img src="./images/world.png" alt="world" className="banner-image" />
+          <img src={img} alt="world is beauty" className="banner-image" />
         </div>
       </div>
     </main>
   );
 };
-
-export default HeroSection;
