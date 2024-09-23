@@ -2,6 +2,7 @@ import { useEffect, useState, useTransition } from "react";
 import { useParams } from "react-router-dom";
 import { Loader } from "../UI/Loader";
 import { getCountryIndData } from "../../api/postApi";
+import { NavLink } from "react-router-dom";
 
 const CountryDetails = () => {
   const params = useParams();
@@ -66,7 +67,7 @@ const CountryDetails = () => {
                 <p>
                   <span className="card-description"> Currencies: </span>
                   {Object.keys(country[0].currencies.symbol || {})
-                    .map((curElem) => country.currencies[curElem].name)
+                    .map((curElem) => country[0].currencies.INR.name)
                     .join(", ")}
                 </p>
                 <p>
@@ -79,6 +80,11 @@ const CountryDetails = () => {
             </div>
           </div>
         )}
+        <div className="country-card-backBtn">
+          <NavLink to="/country" className="backBtn">
+            <button>Go Back</button>
+          </NavLink>
+        </div>
       </div>
     </section>
   );

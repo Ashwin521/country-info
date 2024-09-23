@@ -1,6 +1,6 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import img from "./world.png";
-export const HeroSection = () => {
+const HeroSection = () => {
   return (
     <main className="hero-section main">
       <div className="container grid grid-two-cols">
@@ -23,3 +23,4 @@ export const HeroSection = () => {
     </main>
   );
 };
+export default HeroSection;
