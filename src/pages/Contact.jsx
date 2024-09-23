@@ -3,11 +3,10 @@ import React from "react";
 const Contact = () => {
   const handleFormSubmit = (formData) => {
     // console.log(formData.entries());
-    const formInputData=Object.fromEntries(formData.entries());
+    const formInputData = Object.fromEntries(formData.entries());
     console.log(formInputData);
-    
-    
   };
+
   return (
     <>
       <section className="section-contact">

@@ -23,7 +23,7 @@ const CountryCard = ({ country }) => {
           </p>
 
           <p>
-            <span className="card-description">Popuation:</span>
+            <span className="card-description">Capital:</span>
             {capital[0]}
           </p>
           <NavLink to={`/country/${name.common}`}>
